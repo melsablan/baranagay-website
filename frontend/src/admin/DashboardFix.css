@@ -1,0 +1,63 @@
+/* Fix for Dashboard Stats Display */
+
+/* Ensure stat numbers are visible and properly sized */
+.stat-card .stat-number {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #1f2937 !important;
+  line-height: 1 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Ensure stat labels are visible */
+.stat-card .stat-label {
+  font-size: 0.875rem !important;
+  color: #6b7280 !important;
+  font-weight: 500 !important;
+  margin-top: 0.5rem !important;
+}
+
+/* Fix stat card height and padding */
+.stat-card {
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  min-height: 140px !important;
+}
+
+/* Ensure proper spacing in stat header */
+.stat-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Make sure the stat change text is visible */
+.stat-change {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.375rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+}
+
+.stat-change.positive {
+  color: #10b981 !important;
+}
+
+.stat-change.negative {
+  color: #6b7280 !important;
+}
+
+/* Ensure icons are properly displayed */
+.stat-icon {
+  width: 48px !important;
+  height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 12px !important;
+  flex-shrink: 0 !important;
+}

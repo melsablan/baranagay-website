@@ -1,0 +1,54 @@
+/* Statistics Section - Clean Flat Design with Grid Only */
+
+/* Keep only the grid layout in CSS since inline styles handle the rest */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .stats-grid {
+    gap: 2rem;
+  }
+  
+  .stat-icon {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .stat-value {
+    font-size: 2.5rem !important;
+  }
+  
+  .stat-label {
+    font-size: 1rem !important;
+  }
+  
+  .stat-card {
+    padding: 1.5rem 0.75rem !important;
+  }
+  
+  .stats-section {
+    padding: 3.5rem 0 !important;
+  }
+}
+
+/* Simple hover effect */
+.stat-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease;
+}

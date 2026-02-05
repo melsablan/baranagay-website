@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+.venv-1/
+.venv/
+brgy.pem
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.log
+local_settings.py
+instance/
+.webassets-cache
+.scrapy
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# React / Node
+frontend/node_modules/
+frontend/build/
+frontend/.pnp
+frontend/.pnp.js
+frontend/coverage
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Database
+*.sqlite
+*.db
+
+# Uploads & Certificates
+backend/uploads/
+backend/certificates/*.pdf
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Elastic Beanstalk
+.elasticbeanstalk/
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.gitignore.save

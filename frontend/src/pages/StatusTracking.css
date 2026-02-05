@@ -1,0 +1,366 @@
+/* Status Tracking Page */
+
+.status-tracking-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.tracking-hero {
+  background: linear-gradient(135deg, #A100FF, #8000CC);
+  padding: 5rem 0 4rem;
+  text-align: center;
+  color: white;
+}
+
+.tracking-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tracking-hero-subtitle {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tracking-form-section {
+  padding: 4rem 0 5rem;
+}
+
+.tracking-form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-type-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.type-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  background-color: white;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.type-btn:hover {
+  border-color: #A100FF;
+  color: #A100FF;
+}
+
+.type-btn.active {
+  background-color: #A100FF;
+  border-color: #A100FF;
+  color: white;
+}
+
+.tracking-search {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tracking-search input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.tracking-search input:focus {
+  outline: none;
+  border-color: #A100FF;
+  box-shadow: 0 0 0 3px rgba(161, 0, 255, 0.1);
+}
+
+.tracking-search button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #A100FF;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tracking-search button:hover:not(:disabled) {
+  background-color: #8000CC;
+}
+
+.tracking-search button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tracking-error {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tracking-result {
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.result-status {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.status-icon-success { color: #10b981; }
+.status-icon-pending { color: #f59e0b; }
+.status-icon-rejected { color: #ef4444; }
+
+.result-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.result-id {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-badge.success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.detail-value {
+  color: #1f2937;
+  font-weight: 500;
+  text-align: right;
+  font-size: 0.875rem;
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.btn-download:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+}
+
+.sample-ids {
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.sample-title {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.sample-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.sample-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.sample-buttons button:hover {
+  background-color: #e5e7eb;
+  border-color: #A100FF;
+  color: #A100FF;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tracking-hero-title {
+    font-size: 2rem;
+  }
+
+  .tracking-form-wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .tracking-type-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .tracking-search {
+    flex-direction: column;
+  }
+
+  .tracking-search button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .result-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .status-badge {
+    align-self: flex-start;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .detail-value {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .tracking-form-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .type-btn {
+    font-size: 0.875rem;
+    padding: 0.875rem;
+  }
+
+  .sample-buttons {
+    flex-direction: column;
+  }
+
+  .sample-buttons button {
+    width: 100%;
+  }
+}
