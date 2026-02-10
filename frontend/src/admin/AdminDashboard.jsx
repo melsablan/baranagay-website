@@ -204,6 +204,7 @@ const AdminDashboard = () => {
 
 
   // Load data on mount
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadAllData = useCallback(() => {
     fetchRequests();
     fetchAppointments();
