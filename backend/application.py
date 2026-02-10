@@ -1082,4 +1082,8 @@ def internal_error(error):
 application = app
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    # Production-ready configuration
+    debug_mode = os.getenv('FLASK_ENV', 'production') == 'development'
+    host = '0.0.0.0'  # Required for cloud deployment
+    port = int(os.getenv('PORT', 5000))
+    app.run(debug=debug_mode, host=host, port=port)

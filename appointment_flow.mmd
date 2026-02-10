@@ -1,0 +1,18 @@
+flowchart TD
+    Start((Start)) --> Access[Access Website]
+    Access --> Select[Select 'Book Appointment']
+    Select --> ChooseDetails[Select Service & Date]
+    ChooseDetails --> FetchSlots[System: Fetch Available Slots]
+    FetchSlots --> ShowSlots{Slots Available?}
+    
+    ShowSlots -- No --> NoSlots[Show 'No Slots Available']
+    NoSlots --> ChooseDetails
+    
+    ShowSlots -- Yes --> SelectTime[Select Time Slot]
+    SelectTime --> Form[Fill Personal Details<br/>(Name, Email, Phone, Health Concern)]
+    Form --> Submit[Submit Booking]
+    
+    Submit --> Create[System: Create Appointment]
+    Create --> Success[Show Success & Tracking ID]
+    Success --> Email[Receive 'Booking Pending' Email]
+    Email --> End((End))

@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "keywords": ["hi", "hello", "hey", "mabuhay", "howdy", "good morning", "good afternoon", "good evening", "sup"],
+    "response": "Mabuhay! 👋 I'm Kapitan Bot, your Barangay NIT assistant. I'm here to help with questions about certificates, permits, health services, office hours, or anything else barangay-related. What would you like to know?"
+  },
+  "office_hours": {
+    "keywords": ["office hours", "hours", "open", "closed", "working hours", "business hours", "what time", "when open"],
+    "response": "Our office hours are Monday to Friday, 8:00 AM to 5:00 PM. We're closed on weekends and holidays. Is there anything specific you'd like to know about our services?"
+  },
+  "contact_info": {
+    "keywords": ["contact", "phone", "call", "email", "how to reach", "address", "location", "number", "hotline"],
+    "response": "You can reach us at:\n📍 Location: NIT Barangay Hall, Accenture Campus\n📞 Phone: (02) 8123-4567\n📧 Email: brgynit@gmail.com\n\nWhat can I help you with?"
+  },
+  "barangay_clearance": {
+    "keywords": ["barangay clearance", "clearance", "employment", "business clearance"],
+    "response": "Here's what you need to know about **Barangay Clearance**:\n\n📋 **Requirements:**\n• Valid government-issued ID\n• Proof of residency (utility bill or lease contract)\n• Cedula or Community Tax Certificate\n• 1 passport-size photo\n\n💰 **Fee:** Free online, ₱30 walk-in\n⏱️ **Processing Time:** 3-5 business days\n\nYou can request it online through our website! Need help with anything else?"
+  },
+  "certificate_of_indigency": {
+    "keywords": ["indigency", "certificate of indigency", "financial assistance", "medical", "educational"],
+    "response": "Here's what you need to know about **Certificate of Indigency**:\n\n📋 **Requirements:**\n• Valid government-issued ID\n• Proof of residency\n• Letter explaining the purpose\n• Supporting documents (medical records, school enrollment, etc.)\n\n💰 **Fee:** Free online, ₱30 walk-in\n⏱️ **Processing Time:** 3-5 business days\n\nYou can request it online! What would you like to know more about?"
+  },
+  "certificate_of_residency": {
+    "keywords": ["certificate of residency", "residency", "proof of residency certificate"],
+    "response": "Here's what you need to know about **Certificate of Residency**:\n\n📋 **Requirements:**\n• Valid government-issued ID\n• Utility bill or lease contract\n• 1 passport-size photo\n\n💰 **Fee:** Free online, ₱30 walk-in\n⏱️ **Processing Time:** 2-3 business days\n\nThis is a quick one! You can request it online anytime. Anything else I can help with?"
+  },
+  "health_services": {
+    "keywords": ["health", "doctor", "appointment", "medical", "vaccine", "vaccination", "clinic"],
+    "response": "Great question! Here's about our **Health Services**:\n\n🏥 **Health Center Hours:** Mon-Fri, 8:00 AM - 5:00 PM\n🚨 **Emergency Services:** Available 24/7\n\n📅 **Booking Appointments:**\n• Online through our website\n• Call (02) 8123-4567\n• Walk-ins welcome (but may have longer wait times)\n\n💉 **Other Services:**\n• All government-mandated vaccines are FREE\n• Dental services: Tuesdays & Thursdays, 9:00 AM - 4:00 PM\n\nWould you like to book an appointment or know anything else?"
+  },
+  "business_permit": {
+    "keywords": ["business permit", "business", "operate business", "business license"],
+    "response": "Here's what you need for a **Business Permit**:\n\n📋 **Requirements:**\n• Barangay Clearance\n• DTI/SEC Registration\n• Lease contract or proof of ownership\n• Tax Identification Number (TIN)\n• Location clearance/sketch\n\n💰 **Fee:** Varies (depends on business type)\n⏱️ **Processing Time:** 5-7 business days\n\nNote: This needs to be done in person at the Barangay Hall. Need any other info about permits?"
+  },
+  "building_permit": {
+    "keywords": ["building permit", "construction", "renovation", "building clearance"],
+    "response": "Here's what you need for a **Building Permit Clearance**:\n\n📋 **Requirements:**\n• Barangay Clearance\n• Architectural/Engineering plans\n• Lot title or proof of ownership\n\n💰 **Fee:** Free online, ₱30 walk-in\n⏱️ **Processing Time:** 3-5 business days\n\nYou can request this online! Anything else about construction or permits?"
+  },
+  "online_request": {
+    "keywords": ["online", "request", "online request", "submit online", "on website"],
+    "response": "Yes! You can request several documents online:\n\n✅ **Available Online:**\n• Barangay Clearance\n• Certificate of Indigency\n• Certificate of Residency\n• Building Permit Clearance\n\n❌ **In-Person Required:**\n• Business Permit\n• Some specialized permits\n\nJust head to our Services page and click \"Request Certificate\" to get started. Want more details about any service?"
+  },
+  "appointment_booking": {
+    "keywords": ["appointment", "booking", "book appointment", "schedule"],
+    "response": "You can easily book a health appointment!\n\n📅 **Ways to Book:**\n1. Online through our website - Click \"Book Appointment\"\n2. Call us at (02) 8123-4567\n3. Walk-in (but expect longer wait times)\n\n⏰ **Available Times:**\nMonday to Friday, 8:00 AM - 5:00 PM\n\nEmergency services available 24/7\n\nReady to book your appointment?"
+  },
+  "dental_services": {
+    "keywords": ["dental", "teeth", "dentist", "dental checkup"],
+    "response": "We have **Dental Services** available!\n\n🦷 **Schedule:**\n• Tuesday & Thursday\n• 9:00 AM - 4:00 PM\n\nYou can book an appointment online or call (02) 8123-4567. Dental care is an important part of your health! Would you like to book an appointment?"
+  },
+  "processing_time": {
+    "keywords": ["how long", "processing time", "take", "how many days", "rush"],
+    "response": "Here are typical **Processing Times**:\n\n⚡ **Quick (2-3 days):**\n• Certificate of Residency\n\n📅 **Standard (3-5 days):**\n• Barangay Clearance\n• Certificate of Indigency\n• Building Permit Clearance\n\n🏢 **Longer (5-7 days):**\n• Business Permit\n\nFor rush requests, please visit the Barangay Hall in person or call (02) 8123-4567. Which service are you interested in?"
+  },
+  "requirements": {
+    "keywords": ["requirement", "what do i need", "documents", "what to bring", "prepare"],
+    "response": "The requirements depend on which service you need:\n\n**Basic requirements for most:**\n• Valid government-issued ID\n• Proof of residency (utility bill or lease)\n• Passport-size photo\n\nWhich service are you interested in? I can give you the exact requirements!"
+  },
+  "fees": {
+    "keywords": ["fee", "cost", "price", "how much", "charge"],
+    "response": "Here's our **Fee Structure**:\n\n💰 **Free Online:**\n• Barangay Clearance\n• Certificate of Residency\n• Building Permit Clearance\n\n💰 **₱30 Walk-in:**\n• Most certificates\n\n💰 **₱50 Service Fee:**\n• Some expedited services\n\n💰 **Variable:**\n• Business Permit (depends on business type)\n\nWhich service interests you?"
+  },
+  "payment": {
+    "keywords": ["payment", "pay", "how to pay", "accept card", "gcash", "check"],
+    "response": "We accept multiple payment methods:\n\n💳 **Payment Options:**\n• Cash (at Barangay Hall)\n• Debit/Credit Card\n• GCash/PayMaya\n• Bank Transfer\n\nFor online requests, payment details are provided during the application process. Any questions?"
+  },
+  "location": {
+    "keywords": ["where", "address", "directions", "parking", "map", "located"],
+    "response": "📍 **Barangay NIT Hall Location:**\nAccenture Campus\n\n🚗 **Parking:**\n• Available in front of the Barangay Hall\n• Designated parking area near the health center\n\n🚌 **Getting Here:**\nCall us at (02) 8123-4567 for detailed directions\n\n⏰ **Open:**\nMonday-Friday, 8:00 AM - 5:00 PM\n\nNeed any other info?"
+  },
+  "services_list": {
+    "keywords": ["services", "what do you offer", "what can i get", "available", "list"],
+    "response": "📋 **Our Services Include:**\n\n✅ **Certificates:**\n• Barangay Clearance\n• Certificate of Indigency\n• Certificate of Residency\n\n✅ **Permits:**\n• Business Permit\n• Building Permit Clearance\n\n✅ **Health:**\n• 24/7 Emergency Services\n• Vaccinations (FREE)\n• Dental Services (Tue & Thu)\n\nWhich service would you like to know more about?"
+  },
+  "barangay_id": {
+    "keywords": ["id", "barangay id", "resident id"],
+    "response": "To get a **Barangay ID/Registration**:\n\n📋 **Requirements:**\n• Proof of residency (utility bill or lease contract)\n• Valid ID (government-issued)\n• Fill out resident registration form\n\n📍 **Where:** Barangay Hall\n⏱️ **Time:** Usually same-day\n\nVisit us Mon-Fri, 8 AM - 5 PM. Any other questions?"
+  },
+  "barangay_officials": {
+    "keywords": ["captain", "barangay captain", "leader", "officials", "who is", "kagawad", "leadership", "sk chairman", "mel sablan"],
+    "response": "Here's our **Barangay Leadership Team**:\n\n👨‍💼 **Kapitan Mel Sablan** - Barangay Captain\nLeading our barangay with transparency and dedication\n\n👩‍⚖️ **Ann Sheryll Tiu** - Kagawad (Health)\n🎓 **Lennen Lumbre** - Kagawad (Education)\n🛡️ **Nestlie Laguidao** - Kagawad (Peace & Order)\n👥 **Cristine Pelare** - SK (Sangguniang Kabataan) Chairman\n\n📞 **Get in Touch:**\n• Phone: (02) 8123-4567\n• Visit: Barangay Hall, Accenture Campus\n• Mon-Fri: 8 AM - 5 PM\n\nNeed anything else?"
+  }
+}
