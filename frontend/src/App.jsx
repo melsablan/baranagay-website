@@ -55,9 +55,9 @@ const Layout = ({ children }) => {
             <span>Open Hours of Barangay NIT Mon - Fri: 8.00 am - 5.00 pm</span>
           </div>
           <div className="icon-text-row" style={{paddingRight: '1rem'}}>
-            <a href="#" className="social-link">
+            <button className="social-link" onClick={() => window.open('https://facebook.com', '_blank')}>
               <Facebook size={16} />
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -186,9 +186,9 @@ const Layout = ({ children }) => {
             <div className="footer-links-bottom">
               <Link to="/admin/login">Admin</Link>
               <span>|</span>
-              <a href="#">Privacy Policy</a>
+              <button onClick={() => window.scrollTo(0, 0)} style={{background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', textDecoration: 'underline'}}>Privacy Policy</button>
               <span>|</span>
-              <a href="#">Terms of Service</a>
+              <button onClick={() => window.scrollTo(0, 0)} style={{background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', textDecoration: 'underline'}}>Terms of Service</button>
             </div>
           </div>
         </div>

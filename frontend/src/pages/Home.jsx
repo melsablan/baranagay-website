@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  ArrowRight, Car, Building2, 
-  Landmark, Home as HomeIcon, MessageSquare, FileText, Calendar, X,
+  ArrowRight,
+  Landmark, MessageSquare, FileText, Calendar, X,
   Target, Eye, Award, Users, Tag, ChevronRight, TrendingUp, Heart, Shield
 } from 'lucide-react';
-import ServiceItem from '../components/public/ServiceItem';
 import BarangayChatBot from '../components/chat/BarangayChatBot';
 import CertificateRequestForm from '../components/forms/CertificateRequestForm';
 import AppointmentBookingForm from '../components/forms/AppointmentBookingForm';

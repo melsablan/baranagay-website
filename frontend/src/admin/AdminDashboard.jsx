@@ -201,39 +201,18 @@ const AdminDashboard = () => {
     }
   };
 
-  const fetchStats = async () => {
-    setLoading(prev => ({ ...prev, stats: true }));
-    
-    try {
-      const response = await fetch(`${API_URL}/admin/dashboard`, {
-        headers: {
-          'Authorization': `Bearer ${getAuthToken()}`
-        }
-      });
 
-      if (!response.ok) throw new Error('Failed to fetch stats');
-      
-      const data = await response.json();
-      
-      setStats({
-        pending: data.pendingCertificates || 0,
-        approved: requests.filter(r => r.status === 'approved').length,
-        rejected: requests.filter(r => r.status === 'rejected').length,
-        appointments: data.todayAppointments || 0,
-      });
-    } catch (error) {
-      console.error('Error fetching stats:', error);
-    } finally {
-      setLoading(prev => ({ ...prev, stats: false }));
-    }
-  };
 
   // Load data on mount
-  useEffect(() => {
+  const loadAllData = () => {
     fetchRequests();
     fetchAppointments();
     fetchNews();
     fetchMessages();
+  };
+  
+  useEffect(() => {
+    loadAllData();
   }, []);
 
   // Scroll to top when view changes
@@ -925,14 +904,6 @@ const AdminDashboard = () => {
   );
 };
 
-// Loading State Component
-const LoadingState = ({ message = 'Loading...' }) => (
-  <div style={{ textAlign: 'center', padding: '3rem' }}>
-    <Loader className="spinning" size={48} style={{ margin: '0 auto 1rem' }} />
-    <p style={{ color: '#6b7280' }}>{message}</p>
-  </div>
-);
-
 // Resident Management Component (same as before)
 const ResidentManagement = ({ residents, onAdd, onEdit, onView, onDelete, onApprove }) => (
   <div className="table-card">
@@ -1444,7 +1415,7 @@ const RequestModal = ({ request, onClose, onApprove, onReject }) => {
         URL.revokeObjectURL(imageData);
       }
     };
-  }, [filename]);
+  }, [filename, imageData]);
 
   return (
     <>
