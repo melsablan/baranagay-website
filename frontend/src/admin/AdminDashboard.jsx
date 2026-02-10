@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard, FileText, Calendar, Users, Settings, Bell,
@@ -204,16 +204,16 @@ const AdminDashboard = () => {
 
 
   // Load data on mount
-  const loadAllData = () => {
+  const loadAllData = useCallback(() => {
     fetchRequests();
     fetchAppointments();
     fetchNews();
     fetchMessages();
-  };
+  }, []);
   
   useEffect(() => {
     loadAllData();
-  }, []);
+  }, [loadAllData]);
 
   // Scroll to top when view changes
   useEffect(() => {
